@@ -1,18 +1,38 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
 
 import me from '../assets/images/main/me.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 
+
 class Homepage extends React.Component {
+  state = {
+    currentImage: this.props.data.Images.edges[0].node,
+    imageIndex: 0,
+  }
+
+  incrementImage = change => {
+    let index = this.state.imageIndex;
+    if (!this.props.data.Images.edges[index + change]) {
+      index = change === 1 ? -1 : this.props.data.Images.edges.length
+    }
+    this.setState({
+      currentImage: this.props.data.Images.edges[index + change].node,
+      imageIndex: index + change,
+    })
+  }
+
   render() {
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const { showChevrons, currentImage } = this.state
+    const imageSizes = currentImage.childImageSharp.sizes
+    const imageName = currentImage.name
 
     return (
       <div>
-        <Helmet title={siteTitle}/>
+        <Helmet/>
 
         <section id="one" className="main style1">
           <div className="grid-wrapper">
@@ -20,8 +40,11 @@ class Homepage extends React.Component {
               <header className="major">
                 <h2>About Me</h2>
               </header>
-              <p>Hi, it's me. I live in Gothenburg, Sweden and work for a great little startup connecting schools and substitute teachers.</p>
-              <p>We work with React and Rails and get to do everything from brainstorm to pick the colors for buttons.</p>
+              <p>Hi, it's me. I live in Gothenburg, Sweden and work for a great little startup connecting schools and
+                substitute teachers.</p>
+              <p>We work with React and Rails and get to do everything from brainstorm to pick the colors for
+                buttons.</p>
+              <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
             </div>
             <div className="col-6">
               <span className="image fit"><img src={me} alt=""/></span>
@@ -31,17 +54,31 @@ class Homepage extends React.Component {
 
         <section id="two" className="main style2">
           <div className="grid-wrapper">
-            <div className="col-6">
-              <ul className="major-icons">
-                <li><span className="icon style1 major fa-code"></span></li>
-                <li><span className="icon style2 major fa-bolt"></span></li>
-                <li><span className="icon style3 major fa-camera-retro"></span></li>
-                <li><span className="icon style4 major fa-cog"></span></li>
-                <li><span className="icon style5 major fa-desktop"></span></li>
-                <li><span className="icon style6 major fa-calendar"></span></li>
-              </ul>
+            <div className="col-10">
+              <div key={imageName}
+                   onMouseEnter={() => this.setState({ showChevrons: true })}
+                   onMouseLeave={() => this.setState({ showChevrons: false })}>
+                <div>
+                  <Img
+                    title={imageName}
+                    alt={imageName}
+                    sizes={imageSizes}
+                    className="card-img_src center-block"
+                  />
+                </div>
+                <div className='chevron-container'>
+                    <span style={{ display: showChevrons ? '' : 'none' }}
+                          className='fa icon fa-chevron-left chevron-left'
+                          onClick={() => this.incrementImage(-1)}
+                    />
+                  <span style={{ display: showChevrons ? '' : 'none' }}
+                        className='fa icon fa-chevron-right chevron-right'
+                        onClick={() => this.incrementImage(1)}
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-6">
+            <div className="col-2">
               <header className="major">
                 <h2>About me</h2>
               </header>
@@ -98,15 +135,14 @@ class Homepage extends React.Component {
           </div>
         </section>
 
-        <section id="four" className="main style2 special">
-          <div className="container">
-            <header className="major">
-              <h2>Ipsum feugiat consequat?</h2>
+        <section id='four' className='main style2 special'>
+          <div className='container'>
+            <header className='major'>
+              <h2>Should we be talking?</h2>
             </header>
-            <p>Sed lacus nascetur ac ante amet sapien.</p>
-            <ul className="actions uniform">
-              <li><a href="#" className="button special">Sign Up</a></li>
-              <li><a href="#" className="button">Learn More</a></li>
+            <p>amber@amberwilkie.com</p>
+            <ul className='actions uniform'>
+              <li><a href='mailto:amber@amberwilkie.com' className='button special'>Drop me a line</a></li>
             </ul>
           </div>
         </section>
@@ -122,10 +158,21 @@ Homepage.propTypes = {
 export default Homepage
 
 export const pageQuery = graphql`
-    query IndexQuery {
-        site {
-            siteMetadata {
-                title
+    query allImgsQuery {
+        Images: allFile(
+            sort: {order: ASC, fields: [absolutePath]}
+            filter: {relativePath: {regex: "/travel/"}}
+        ) {
+            edges {
+                node {
+                    relativePath
+                    name
+                    childImageSharp {
+                        sizes(maxWidth: 1500) {
+                            ...GatsbyImageSharpSizes
+                        }
+                    }
+                }
             }
         }
     }
