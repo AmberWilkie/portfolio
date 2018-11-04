@@ -27,7 +27,11 @@
 ));
 
 /* Custom */
-
+.border-radius {
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  border-radius: .25rem;
+}
 .chevron-container {
   display: flex;
   width: 100%;
@@ -1078,7 +1082,7 @@ button,
   text-align: center;
 
   .icons {
-    margin: 0;
+    margin: 0 0 2rem 0;
   }
 
   .copyright {

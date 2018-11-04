@@ -15,7 +15,7 @@ class Homepage extends React.Component {
   }
 
   incrementImage = change => {
-    let index = this.state.imageIndex;
+    let index = this.state.imageIndex
     if (!this.props.data.Images.edges[index + change]) {
       index = change === 1 ? -1 : this.props.data.Images.edges.length
     }
@@ -34,7 +34,7 @@ class Homepage extends React.Component {
       <div>
         <Helmet/>
 
-        <section id="one" className="main style1">
+        <section id="aboutMe" className="main style1">
           <div className="grid-wrapper">
             <div className="col-6">
               <header className="major">
@@ -52,9 +52,16 @@ class Homepage extends React.Component {
           </div>
         </section>
 
-        <section id="two" className="main style2">
+        <section id="photography" className="main style2">
           <div className="grid-wrapper">
-            <div className="col-10">
+            <div className='col-12'>
+              <header className="major">
+                <h2>Photography</h2>
+              </header>
+              <p>I've seen the world through a camera lens for many years now. Here are some images I made while
+                traveling.</p>
+            </div>
+            <div className="col-12">
               <div key={imageName}
                    onMouseEnter={() => this.setState({ showChevrons: true })}
                    onMouseLeave={() => this.setState({ showChevrons: false })}>
@@ -63,7 +70,7 @@ class Homepage extends React.Component {
                     title={imageName}
                     alt={imageName}
                     sizes={imageSizes}
-                    className="card-img_src center-block"
+                    className="border-radius"
                   />
                 </div>
                 <div className='chevron-container'>
@@ -78,22 +85,9 @@ class Homepage extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="col-2">
-              <header className="major">
-                <h2>About me</h2>
-              </header>
-              <p>Yo! I’m Amber. I’m a Star-Trek-watching, thrift-store-shopping, belly-laughing, road-tripping,
-                food-gobbling, photo-obsessed kinda girl. You could say I collect hobbies: ceramics, yoga, drawing,
-                guitar (and so many more) . I spend an ungodly amount of time on the computer. If being a nerd is cool
-                now, then I am super cool. I used to do wedding photography full-time and that was great.</p>
-              <p>But then I
-                thought: I'd really like to build web apps, so I went to bootcamp and now I do that for a living. Change
-                is fun! I made this promotional video for my photography business and it's funny and weird and I'm just
-                going to go ahead and keep on linking it (plus a bunch of wedding links because it was damn hard to earn
-                those 30 five-star Yelp reviews! Did I ever get paid in Bitcoin? I did not.</p>
-            </div>
           </div>
         </section>
+
 
         <section id="three" className="main style1 special">
           <div className="grid-wrapper">
@@ -132,18 +126,6 @@ class Homepage extends React.Component {
               </ul>
             </div>
 
-          </div>
-        </section>
-
-        <section id='four' className='main style2 special'>
-          <div className='container'>
-            <header className='major'>
-              <h2>Should we be talking?</h2>
-            </header>
-            <p>amber@amberwilkie.com</p>
-            <ul className='actions uniform'>
-              <li><a href='mailto:amber@amberwilkie.com' className='button special'>Drop me a line</a></li>
-            </ul>
           </div>
         </section>
       </div>
