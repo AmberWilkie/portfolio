@@ -44,15 +44,18 @@ class Homepage extends React.Component {
                 substitute teachers.</p>
               <p>We work with React and Rails and get to do everything from brainstorm to pick the colors for
                 buttons.</p>
+              <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
               <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
-            </div>
+              <a href='#photography' onClick={() => this.setState({showPhotography: !this.state.showPhotography})}>Photography</a>
+              </div>
+              </div>
             <div className="col-6">
               <span className="image fit"><img src={me} alt=""/></span>
             </div>
           </div>
         </section>
 
-        <section id="photography" className="main style2">
+        {this.state.showPhotography && (<section id="photography" className="main style2">
           <div className="grid-wrapper">
             <div className='col-12'>
               <header className="major">
@@ -86,48 +89,48 @@ class Homepage extends React.Component {
               </div>
             </div>
           </div>
-        </section>
+        </section>)}
 
 
-        <section id="three" className="main style1 special">
-          <div className="grid-wrapper">
-            <div className="col-12">
-              <header className="major">
-                <h2>Adipiscing amet consequat</h2>
-              </header>
-              <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
-            </div>
+        {/*<section id="three" className="main style1 special">*/}
+          {/*<div className="grid-wrapper">*/}
+            {/*<div className="col-12">*/}
+              {/*<header className="major">*/}
+                {/*<h2>Adipiscing amet consequat</h2>*/}
+              {/*</header>*/}
+              {/*<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>*/}
+            {/*</div>*/}
 
-            <div className="col-4">
-              <span className="image fit"><img src={pic02} alt=""/></span>
-              <h3>Magna feugiat lorem</h3>
-              <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat
-                et nascetur.</p>
-              <ul className="actions">
-                <li><a href="#" className="button">More</a></li>
-              </ul>
-            </div>
-            <div className="col-4">
-              <span className="image fit"><img src={pic03} alt=""/></span>
-              <h3>Magna feugiat lorem</h3>
-              <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat
-                et nascetur.</p>
-              <ul className="actions">
-                <li><a href="#" className="button">More</a></li>
-              </ul>
-            </div>
-            <div className="col-4">
-              <span className="image fit"><img src={pic04} alt=""/></span>
-              <h3>Magna feugiat lorem</h3>
-              <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat
-                et nascetur.</p>
-              <ul className="actions">
-                <li><a href="#" className="button">More</a></li>
-              </ul>
-            </div>
+            {/*<div className="col-4">*/}
+              {/*<span className="image fit"><img src={pic02} alt=""/></span>*/}
+              {/*<h3>Magna feugiat lorem</h3>*/}
+              {/*<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat*/}
+                {/*et nascetur.</p>*/}
+              {/*<ul className="actions">*/}
+                {/*<li><a href="#" className="button">More</a></li>*/}
+              {/*</ul>*/}
+            {/*</div>*/}
+            {/*<div className="col-4">*/}
+              {/*<span className="image fit"><img src={pic03} alt=""/></span>*/}
+              {/*<h3>Magna feugiat lorem</h3>*/}
+              {/*<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat*/}
+                {/*et nascetur.</p>*/}
+              {/*<ul className="actions">*/}
+                {/*<li><a href="#" className="button">More</a></li>*/}
+              {/*</ul>*/}
+            {/*</div>*/}
+            {/*<div className="col-4">*/}
+              {/*<span className="image fit"><img src={pic04} alt=""/></span>*/}
+              {/*<h3>Magna feugiat lorem</h3>*/}
+              {/*<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat*/}
+                {/*et nascetur.</p>*/}
+              {/*<ul className="actions">*/}
+                {/*<li><a href="#" className="button">More</a></li>*/}
+              {/*</ul>*/}
+            {/*</div>*/}
 
-          </div>
-        </section>
+          {/*</div>*/}
+        {/*</section>*/}
       </div>
     )
   }

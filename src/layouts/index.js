@@ -24,13 +24,16 @@ class Template extends React.Component {
       }
     }
 
+    togglePhotography = () => this.setState({showPhotography: !this.state.showPhotography})
+
     render() {
         const { children } = this.props;
 
         return (
             <div className={`body ${this.state.loading}`}>
-                <Header />
-                {children()}
+              {console.log(this.state.showPhotography)}
+                <Header togglePhotography={this.togglePhotography}/>
+                {children(this.state.showPhotography)}
                 <Footer />
             </div>
         );
