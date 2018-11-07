@@ -5,6 +5,7 @@
   "author": "Hunter Chang",
   "dependencies": {
     "gatsby": "^1.9.243",
+    "gatsby-cli": "^2.4.4",
     "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-google-analytics": "^1.0.24",
@@ -16,7 +17,7 @@
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.39",
     "gatsby-transformer-sharp": "^1.6.22",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.5"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [

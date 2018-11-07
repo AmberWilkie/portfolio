@@ -15,6 +15,6 @@ Run `gatsby develop` in the terminal to start.
 ### To-do
 - Gracefully animate the opening of the photography section
 - Finish the photo portfolio - add a bunch more images
-- Deploy
+- Deploy https://medium.freecodecamp.org/how-i-made-my-portfolio-website-blazing-fast-with-gatsby-82ccddc2f671
 - Flesh out about me section
 - CV?
