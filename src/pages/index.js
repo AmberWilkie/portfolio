@@ -46,7 +46,7 @@ class Homepage extends React.Component {
                 buttons.</p>
               <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
               <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
-              <a href='#photography' onClick={() => this.setState({showPhotography: !this.state.showPhotography})}>Photography</a>
+              <a style={{cursor: 'pointer'}} onClick={() => this.setState({showPhotography: !this.state.showPhotography})}>Photography</a>
               </div>
               </div>
             <div className="col-6">
