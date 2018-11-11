@@ -2,14 +2,27 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 
-import Photography from '../components/Photography';
-import me from '../assets/images/main/me.jpg'
+import Photography from '../components/Photography'
+import me from '../assets/images/main/me.png'
+import Miscellaneous from '../components/Miscellaneous'
+
 
 class Homepage extends React.Component {
-  state = {};
+  state = {}
 
   render() {
-    const {showPhotography} = this.state;
+    const { showMiscellaneous, showPhotography } = this.state
+
+    const ChevronLink = ( toggle, text ) =>
+      <a style={{ cursor: 'pointer' }}
+         className={this.state[toggle] ? 'chevron-below' : ''}
+         onClick={() => this.setState({
+           showPhotography: false,
+           showMiscellaneous: false,
+           [toggle]: !this.state[toggle],
+         })}>
+        {text}
+      </a>
 
     return (
       <div>
@@ -27,9 +40,8 @@ class Homepage extends React.Component {
                 for buttons.</p>
               <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                 <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
-                <a style={{ cursor: 'pointer' }}
-                   className={showPhotography ? 'chevron-below' : ''}
-                   onClick={() => this.setState({ showPhotography: !this.state.showPhotography })}>Photography</a>
+                {ChevronLink('showPhotography', 'Photography')}
+                {ChevronLink('showMiscellaneous', 'Etc')}
               </div>
             </div>
             <div className="col-6">
@@ -37,8 +49,9 @@ class Homepage extends React.Component {
             </div>
           </div>
         </section>
-
+        {console.log(this.props.data)}
         {showPhotography && <Photography data={this.props.data}/>}
+        {showMiscellaneous && <Miscellaneous/>}
       </div>
     )
   }

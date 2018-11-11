@@ -17,6 +17,7 @@ class Photography extends Component {
     if (!this.props.data.Images.edges[index + change]) {
       index = change === 1 ? -1 : this.props.data.Images.edges.length
     }
+
     this.setState({ animate: true }, () => {
 
       this.setState({
@@ -28,7 +29,7 @@ class Photography extends Component {
   }
 
   render() {
-    const { showChevrons, currentImage, imageIndex } = this.state
+    const { showChevrons, currentImage } = this.state
     const imageSizes = currentImage.childImageSharp.sizes
     const imageName = currentImage.name
 
@@ -45,9 +46,10 @@ class Photography extends Component {
               classNames="fade"
             >
               <div>
-                <p>{travelDescriptions[imageIndex].text}</p>
-                {travelDescriptions[imageIndex].link &&
-                <a href={travelDescriptions[imageIndex].link} target='_new'>More</a>}
+                <p>{travelDescriptions[imageName].text}</p>
+                {travelDescriptions[imageName].paragraph && <p>{travelDescriptions[imageName].paragraph}</p>}
+                {travelDescriptions[imageName].link &&
+                <a href={travelDescriptions[imageName].link} target='_new'>More</a>}
               </div>
             </CSSTransition>
           </div>
