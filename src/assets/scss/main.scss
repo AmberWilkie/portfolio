@@ -111,6 +111,11 @@ a {
     border-bottom-color: transparent !important;
     color: _palette(accent1);
   }
+
+  &.miscellaneous {
+    display: table;
+    margin-bottom: .75rem;
+  }
 }
 
 strong, b {
@@ -546,6 +551,14 @@ input[type="radio"] {
     &:before {
       font-size: 4em;
       line-height: 1em;
+    }
+  }
+
+  &.cursor {
+    cursor: pointer;
+    &:hover {
+      background-color: _palette(border);
+      transition: .2s;
     }
   }
 }
