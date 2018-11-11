@@ -5,7 +5,7 @@ class Footer extends React.Component {
     return (
       <section id="footer">
         <div className='container'>
-          <header className='major'>
+          <header className='major footer'>
             <h2>Should we be talking?</h2>
           </header>
           <ul className="icons">

@@ -32,6 +32,7 @@
   -moz-border-radius: .25rem;
   border-radius: .25rem;
 }
+
 .chevron-container {
   display: flex;
   width: 100%;
@@ -46,6 +47,7 @@
   margin-top: -6rem;
   margin-left: 1rem;
 }
+
 .chevron-right {
   color: white;
   opacity: .5;
@@ -53,6 +55,29 @@
   position: absolute;
   margin-top: -6rem;
   margin-right: 1rem;
+}
+
+.fade-exit-active {
+  opacity: 0;
+
+}
+.fade-exit-done {
+  opacity: 1;
+  transition: 0.15s;
+}
+
+.chevron-below {
+  border-bottom-color: transparent !important;
+  color: _palette(accent1);
+
+  &:after {
+    content: '\f078';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0 0 10px;
+    text-decoration: none;
+  }
 }
 
 /* Basic */
@@ -82,7 +107,7 @@ a {
   color: inherit;
   text-decoration: none;
 
-  &:hover {
+  &:hover, &.chevron-below {
     border-bottom-color: transparent !important;
     color: _palette(accent1);
   }
@@ -246,6 +271,7 @@ header {
 
   &.major {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
+    width: fit-content;
 
     &:after {
       background: _palette(border);
@@ -253,7 +279,15 @@ header {
       display: inline-block;
       height: 1px;
       margin-top: (_size(element-margin) * 0.75);
-      width: 6em;
+      width: 70%;
+    }
+
+    &.footer {
+      width: 100%;
+
+      &:after {
+        width: 10rem;
+      }
     }
 
     h2, h3, h4, h5, h6 {
