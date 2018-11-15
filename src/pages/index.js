@@ -1,32 +1,33 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
 
 import Photography from '../components/Photography'
 import me from '../assets/images/main/me.png'
 import Miscellaneous from '../components/Miscellaneous'
 
-
 class Homepage extends React.Component {
   state = {}
+
+  ChevronLink = ( toggle, text ) =>
+    <a style={{ cursor: 'pointer' }}
+       className={this.state[toggle] ? 'chevron-below' : ''}
+       onClick={() => this.setState({
+         showPhotography: false,
+         showMiscellaneous: false,
+         [toggle]: !this.state[toggle],
+       })}>
+      {text}
+    </a>
 
   render() {
     const { showMiscellaneous, showPhotography } = this.state
 
-    const ChevronLink = ( toggle, text ) =>
-      <a style={{ cursor: 'pointer' }}
-         className={this.state[toggle] ? 'chevron-below' : ''}
-         onClick={() => this.setState({
-           showPhotography: false,
-           showMiscellaneous: false,
-           [toggle]: !this.state[toggle],
-         })}>
-        {text}
-      </a>
-
     return (
       <div>
-        <Helmet/>
+        <Helmet>
+          <meta charSet="utf-8"/>
+          <title>Amber Wilkie</title>
+        </Helmet>
 
         <section id="aboutMe" className="main style1">
           <div className="grid-wrapper">
@@ -40,8 +41,8 @@ class Homepage extends React.Component {
                 for buttons.</p>
               <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
                 <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
-                {ChevronLink('showPhotography', 'Photography')}
-                {ChevronLink('showMiscellaneous', 'Etc')}
+                {this.ChevronLink('showPhotography', 'Photography')}
+                {this.ChevronLink('showMiscellaneous', 'Etc')}
               </div>
             </div>
             <div className="col-6">
@@ -49,7 +50,6 @@ class Homepage extends React.Component {
             </div>
           </div>
         </section>
-        {console.log(this.props.data)}
         {showPhotography && <Photography data={this.props.data}/>}
         {showMiscellaneous && <Miscellaneous/>}
       </div>

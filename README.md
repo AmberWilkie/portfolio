@@ -1,9 +1,9 @@
 # gatsby-starter-photon
 Gatsby starter based on the Photon site template, designed by [HTML5 UP](https://html5up.net/photon). Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
 
-## Preview
+## Hosted
 
-http://gatsby-photon.surge.sh/
+www.amberwilkie.com
 
 ## Installation
 
@@ -14,7 +14,5 @@ Run `gatsby develop` in the terminal to start.
 
 ### To-do
 - Gracefully animate the opening of the photography section
-- Finish the photo portfolio - add a bunch more images
 - Deploy https://medium.freecodecamp.org/how-i-made-my-portfolio-website-blazing-fast-with-gatsby-82ccddc2f671
 - Flesh out about me section
-- CV?

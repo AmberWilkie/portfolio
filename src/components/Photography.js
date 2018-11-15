@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import { CSSTransition } from 'react-transition-group'
 
@@ -12,21 +11,24 @@ class Photography extends Component {
     imageIndex: 0,
   }
 
-  incrementImage = change => {
+  changeImage = change => {
     let index = this.state.imageIndex
-    if (!this.props.data.Images.edges[index + change]) {
-      index = change === 1 ? -1 : this.props.data.Images.edges.length
+    const { edges } = this.props.data.Images
+    if (!edges[index + change]) {
+      index = change === 1 ? -1 : edges.length
     }
 
     this.setState({ animate: true }, () => {
 
       this.setState({
-        currentImage: this.props.data.Images.edges[index + change].node,
+        currentImage: edges[index + change].node,
         imageIndex: index + change,
         animate: false,
       })
     })
   }
+
+  toggleChevrons = () => this.setState({ showChevrons: !this.state.showChevrons })
 
   render() {
     const { showChevrons, currentImage } = this.state
@@ -54,9 +56,7 @@ class Photography extends Component {
             </CSSTransition>
           </div>
           <div className="col-9">
-            <div key={imageName}
-                 onMouseEnter={() => this.setState({ showChevrons: !showChevrons })}
-                 onMouseLeave={() => this.setState({ showChevrons: !showChevrons })}>
+            <div key={imageName} onMouseEnter={this.toggleChevrons} onMouseLeave={this.toggleChevrons}>
               <div>
                 <Img
                   title={imageName}
@@ -66,13 +66,13 @@ class Photography extends Component {
                 />
               </div>
               <div className='chevron-container'>
-                    <span style={{ display: showChevrons ? '' : 'none' }}
-                          className='fa icon fa-chevron-left chevron-left'
-                          onClick={() => this.incrementImage(-1)}
-                    />
+                <span style={{ display: showChevrons ? '' : 'none' }}
+                      className='fa icon fa-chevron-left chevron-left'
+                      onClick={() => this.changeImage(-1)}
+                />
                 <span style={{ display: showChevrons ? '' : 'none' }}
                       className='fa icon fa-chevron-right chevron-right'
-                      onClick={() => this.incrementImage(1)}
+                      onClick={() => this.changeImage(1)}
                 />
               </div>
             </div>
@@ -85,4 +85,4 @@ class Photography extends Component {
 
 Photography.propTypes = {}
 
-export default Photography;
+export default Photography
