@@ -1,49 +1,5 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import CV from '../assets/Wilkie_CV.pdf';
-
-const texts = {
-  intro: {
-    header: 'Miscellaneous',
-    p1: 'All the other bits that don\'t fit so easily into one category or the other.',
-  },
-  slides: {
-    header: 'Slides from public speaking',
-    p1: 'Sometimes I get up the nerve to give a talk. Here are some links to slides from talks I\'ve given',
-    links: [{
-      href: 'https://docs.google.com/presentation/d/e/2PACX-1vTRv9hDF3LjRb1_ryzwKx4QeXlyDgNwdVPpxmrCZ6w976kRsVeDCvj-kTnnPXzT_Q0W0tZ2eUajEfAU/pub?start=false&loop=false&delayms=3000',
-      text: 'Rails and GraphQL, Got.rb meetup, September 2018',
-    },
-      {
-        href: 'https://docs.google.com/presentation/d/e/2PACX-1vTZf-tWeZpBVaCaHmS1m8GLt7tRje4FLy9C2LJCjv2-_QD47NgwQN-WGkN9wXiEDZpUhK1TMx_Hqgp1/pub?start=false&loop=false&delayms=3000',
-        text: 'Rails is Awesome, Sigma Smart Women, December 2016',
-      }],
-  },
-  yoga: {
-    header: 'Yoga',
-    p1: 'I have a yoga podcast because I love embarrassing myself. It\'s called \"Just Some Yoga\". Here\'s some links, but it\'s available wherever you look for it, probably.',
-    links: [{
-      href: 'https://itunes.apple.com/us/podcast/just-some-yoga/id1361270660?mt=2',
-      text: 'Apple Podcasts',
-    },
-      {
-        href: 'http://pca.st/l3Xh',
-        text: 'Pocket Casts',
-      }],
-  },
-  location: {
-    header: 'Geolocating Me',
-    p1: 'Until late December, I\'ll be living in Gothenburg, Sweden. We\'ve been here three years and it has been pleasant enough. January 1 my plane touches down in Amsterdam and there we\'ll stay for at least two years.',
-  },
-  cv: {
-    header: 'CV',
-    p1: 'What would a personal website be without a stodgy accounting of all the work-related things I\'ve ever done?',
-    links: [{
-      href: CV,
-      text: 'Download CV',
-    }],
-  },
-}
+import { miscellaneousTexts as texts } from '../utilities/constants'
 
 class Miscellaneous extends Component {
   state = { current: 'intro' }
