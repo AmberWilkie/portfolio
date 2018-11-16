@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link';
 
 import Photography from '../components/Photography'
 import me from '../assets/images/main/me.png'
@@ -43,6 +44,7 @@ class Homepage extends React.Component {
                 <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
                 {this.ChevronLink('showPhotography', 'Photography')}
                 {this.ChevronLink('showMiscellaneous', 'Etc')}
+                <Link to='/blog'>Blog</Link>
               </div>
             </div>
             <div className="col-6">
@@ -62,24 +64,3 @@ Homepage.propTypes = {
 }
 
 export default Homepage
-
-export const pageQuery = graphql`
-    query allImgsQuery {
-        Images: allFile(
-            sort: {order: ASC, fields: [absolutePath]}
-            filter: {relativePath: {regex: "/travel/"}}
-        ) {
-            edges {
-                node {
-                    relativePath
-                    name
-                    childImageSharp {
-                        sizes(maxWidth: 1500) {
-                            ...GatsbyImageSharpSizes
-                        }
-                    }
-                }
-            }
-        }
-    }
-`
