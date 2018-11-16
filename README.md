@@ -1,5 +1,5 @@
-# gatsby-starter-photon
-Gatsby starter based on the Photon site template, designed by [HTML5 UP](https://html5up.net/photon). Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
+# Amber Wilkie
+Gatsby starter based on the Photon site template, designed by [HTML5 UP](https://html5up.net/photon). But then transfered on over to a Gatsby v2 site. Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
 
 ## Hosted
 
