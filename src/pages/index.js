@@ -10,15 +10,15 @@ class IndexPage extends React.Component {
   state = {};
 
   ChevronLink = ( toggle, text ) =>
-  <a style={{ cursor: 'pointer' }}
-     className={this.state[toggle] ? 'chevron-below' : ''}
+  <span
+     className={`link ${this.state[toggle] ? 'chevron-below' : ''}`}
      onClick={() => this.setState({
        showPhotography: false,
        showMiscellaneous: false,
        [toggle]: !this.state[toggle],
      })}>
     {text}
-  </a>
+  </span>
 
   render() {
     const { showMiscellaneous, showPhotography } = this.state
@@ -49,7 +49,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
               <div className="col-6">
-                <span className="image fit"><img src={me} alt=""/></span>
+                <span className="image fit"><img src={me} alt="Amber near Dresden, Germany"/></span>
               </div>
             </div>
           </section>

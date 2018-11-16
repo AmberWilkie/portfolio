@@ -1,4 +1,5 @@
 import CV from '../assets/Wilkie_CV.pdf'
+
 const roadTripLink = 'http://www.amberwilkie.com/2016/02/the-great-american-road-trip-wilkievoyage2015/'
 const yearInReview2017Link = 'https://medium.com/@heyamberwilkie/2017-the-year-i-actually-started-fitting-in-to-sweden-2c6bb7b74079'
 
@@ -127,20 +128,32 @@ export const miscellaneousTexts = {
     p1: 'All the other bits that don\'t fit so easily into one category or the other.',
   },
   slides: {
-    header: 'Slides from public speaking',
-    p1: 'Sometimes I get up the nerve to give a talk. Here are some links to slides from talks I\'ve given',
-    links: [{
-      href: 'https://docs.google.com/presentation/d/e/2PACX-1vTRv9hDF3LjRb1_ryzwKx4QeXlyDgNwdVPpxmrCZ6w976kRsVeDCvj-kTnnPXzT_Q0W0tZ2eUajEfAU/pub?start=false&loop=false&delayms=3000',
-      text: 'Rails and GraphQL, Got.rb meetup, September 2018',
-    },
-      {
-        href: 'https://docs.google.com/presentation/d/e/2PACX-1vTZf-tWeZpBVaCaHmS1m8GLt7tRje4FLy9C2LJCjv2-_QD47NgwQN-WGkN9wXiEDZpUhK1TMx_Hqgp1/pub?start=false&loop=false&delayms=3000',
-        text: 'Rails is Awesome, Sigma Smart Women, December 2016',
-      }],
+    header: 'Other stuff I\'m into',
+    p1: 'I really enjoy picking up random skills. I\'m talking about the rest of life (the not-tech of life). Here are a few arenas I\'ve tackled over the years:',
+    bullets: [
+      'Ceramics - wheel pottery. Three years and lots of pots',
+      'Novel writing. I completed two',
+      'Guitar. Various practice sessions and classes, not much to show for it, honestly.',
+      'Dance. I dig all types.',
+      'Cooking. Been eating my whole life.'
+    ]
+
   },
+  // slides: {
+  //   header: 'Slides from public speaking',
+  //   p1: 'Sometimes I get up the nerve to give a talk. Here are some links to slides from talks I\'ve given',
+  //   links: [{
+  //     href: 'https://docs.google.com/presentation/d/e/2PACX-1vTRv9hDF3LjRb1_ryzwKx4QeXlyDgNwdVPpxmrCZ6w976kRsVeDCvj-kTnnPXzT_Q0W0tZ2eUajEfAU/pub?start=false&loop=false&delayms=3000',
+  //     text: 'Rails and GraphQL, Got.rb meetup, September 2018',
+  //   },
+  //     {
+  //       href: 'https://docs.google.com/presentation/d/e/2PACX-1vTZf-tWeZpBVaCaHmS1m8GLt7tRje4FLy9C2LJCjv2-_QD47NgwQN-WGkN9wXiEDZpUhK1TMx_Hqgp1/pub?start=false&loop=false&delayms=3000',
+  //       text: 'Rails is Awesome, Sigma Smart Women, December 2016',
+  //     }],
+  // },
   yoga: {
     header: 'Yoga',
-    p1: 'I have a yoga podcast because I love embarrassing myself. It\'s called \"Just Some Yoga\". Here\'s some links, but it\'s available wherever you look for it, probably.',
+    p1: 'I have a yoga podcast because I love embarrassing myself. It\'s called "Just Some Yoga". Here\'s some links, but it\'s available wherever you look for it, probably.',
     links: [{
       href: 'https://itunes.apple.com/us/podcast/just-some-yoga/id1361270660?mt=2',
       text: 'Apple Podcasts',

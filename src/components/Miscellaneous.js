@@ -13,6 +13,9 @@ class Miscellaneous extends Component {
           <h2>{texts[current].header}</h2>
         </header>
         <p>{texts[current].p1}</p>
+        {texts[current].bullets && <ul>
+          {texts[current].bullets.map(bullet => <li key={bullet}>{bullet}</li>)}
+        </ul>}
         {texts[current].links && (<p>
           {texts[current].links.map(link => (
             <a href={link.href} key={link.href} className='miscellaneous' target='_new'>{link.text}</a>
