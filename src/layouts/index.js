@@ -9,7 +9,8 @@ class Template extends React.Component {
     return (
       <div className='body'>
         <Header/>
-        {this.props.children()}
+        {console.log('are we even trying this?')}
+        {this.props.children}
         <Footer/>
       </div>
     )

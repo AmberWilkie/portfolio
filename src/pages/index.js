@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Photography from '../components/Photography'
 import me from '../assets/images/main/me.png'
 import Miscellaneous from '../components/Miscellaneous'
+import { graphql, StaticQuery } from 'gatsby'
 
 class Homepage extends React.Component {
   state = {}
@@ -61,7 +62,6 @@ Homepage.propTypes = {
   route: React.PropTypes.object,
 }
 
-export default Homepage
 
 export const pageQuery = graphql`
     query allImgsQuery {
@@ -83,3 +83,8 @@ export const pageQuery = graphql`
         }
     }
 `
+
+export default <StaticQuery
+  query={pageQuery}
+  render={data => <Homepage data={data}/>}
+/>

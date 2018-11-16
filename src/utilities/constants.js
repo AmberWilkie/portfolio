@@ -1,6 +1,6 @@
+import CV from '../assets/Wilkie_CV.pdf'
 const roadTripLink = 'http://www.amberwilkie.com/2016/02/the-great-american-road-trip-wilkievoyage2015/'
 const yearInReview2017Link = 'https://medium.com/@heyamberwilkie/2017-the-year-i-actually-started-fitting-in-to-sweden-2c6bb7b74079'
-import CV from '../assets/Wilkie_CV.pdf'
 
 export const travelDescriptions = {
   travel0: { text: 'I\'ve seen the world through a camera lens for many years now. Here are some images I made while traveling. If you want more, you can find me on the instas.' }
