@@ -61,6 +61,7 @@
   opacity: 0;
 
 }
+
 .fade-exit-done {
   opacity: 1;
   transition: 0.15s;
@@ -78,6 +79,11 @@
     margin: 0 0 0 10px;
     text-decoration: none;
   }
+}
+
+.about-me-links {
+  display: flex;
+  justify-content: space-evenly
 }
 
 /* Basic */
