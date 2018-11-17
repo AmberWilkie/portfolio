@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import PropTypes from 'prop-types'
 import { CSSTransition } from 'react-transition-group'
@@ -88,25 +88,27 @@ Photography.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-graphql`
-  query imagesQuery {
-      Images: allFile(
-          sort: {order: ASC, fields: [absolutePath]}
-          filter: {relativePath: {regex: "/travel/"}}
-      ) {
-          edges {
-              node {
-                  relativePath
-                  name
-                  childImageSharp {
-                      sizes(maxWidth: 1500) {
-                          ...GatsbyImageSharpSizes
-                      }
-                  }
-              }
-          }
-      }
-  }
+const query = graphql`
+    query imagesQuery {
+        Images: allFile(
+            sort: {order: ASC, fields: [absolutePath]}
+            filter: {relativePath: {regex: "/travel/"}}
+        ) {
+            edges {
+                node {
+                    relativePath
+                    name
+                    childImageSharp {
+                        sizes(maxWidth: 1500) {
+                            ...GatsbyImageSharpSizes
+                        }
+                    }
+                }
+            }
+        }
+    }
 `
-
-export default Photography
+export default () => <StaticQuery
+  query={query}
+  render={data => <Photography data={data}/>}
+/>
