@@ -1,9 +1,9 @@
 import React from 'react'
-import me from '../assets/images/main/me.png'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Photography from '../components/Photography'
 import Miscellaneous from '../components/Miscellaneous'
+import me from '../assets/images/main/me.png'
 
 class IndexPage extends React.Component {
   state = {}
@@ -51,7 +51,7 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          {showPhotography && <Photography data={this.props.data}/>}
+          {showPhotography && <Photography />}
           {showMiscellaneous && <Miscellaneous/>}
         </div>
       </Layout>
