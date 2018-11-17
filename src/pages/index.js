@@ -1,6 +1,7 @@
 import React from 'react'
 import me from '../assets/images/main/me.png'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Photography from '../components/Photography'
 import Miscellaneous from '../components/Miscellaneous'
@@ -44,6 +45,7 @@ class IndexPage extends React.Component {
                   <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
                   {this.ChevronLink('showPhotography', 'Photography')}
                   {this.ChevronLink('showMiscellaneous', 'Etc')}
+          <Link to='/medium-posts'>Medium Summaries</Link>
                 </div>
               </div>
               <div className="col-6">

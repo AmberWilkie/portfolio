@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import { CSSTransition } from 'react-transition-group'
 
 import { travelDescriptions } from '../utilities/constants'
@@ -108,9 +108,8 @@ const query = graphql`
         }
     }
 `
-export default () => {
-  return <StaticQuery
+export default () =>
+  <StaticQuery
     query={query}
     render={data => <Photography data={data}/>}
   />
-}

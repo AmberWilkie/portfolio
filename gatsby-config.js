@@ -8,6 +8,13 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@heyamberwilkie`,
+        limit: 5,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     `gatsby-plugin-sass`,
