@@ -29,7 +29,7 @@ class Photography extends Component {
     })
   }
 
-  toggleChevrons = () => this.setState({ showChevrons: !this.state.showChevrons })
+  toggleChevrons = boolean => this.setState({ showChevrons: boolean })
 
   render() {
     const { showChevrons, currentImage } = this.state
@@ -57,7 +57,10 @@ class Photography extends Component {
             </CSSTransition>
           </div>
           <div className="col-9">
-            <div key={imageName} onMouseEnter={this.toggleChevrons} onMouseLeave={this.toggleChevrons}>
+            <div
+                 onMouseEnter={() => this.toggleChevrons(true)}
+                 onMouseLeave={() => this.toggleChevrons(false)}
+            >
               <div>
                 <Img
                   title={imageName}
