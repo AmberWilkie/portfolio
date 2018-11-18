@@ -29,10 +29,8 @@ class Photography extends Component {
     })
   }
 
-  toggleChevrons = boolean => this.setState({ showChevrons: boolean })
-
   render() {
-    const { showChevrons, currentImage } = this.state
+    const { currentImage } = this.state
     const imageSizes = currentImage.childImageSharp.sizes
     const imageName = currentImage.name
 
@@ -56,29 +54,16 @@ class Photography extends Component {
               </div>
             </CSSTransition>
           </div>
-          <div className="col-9">
-            <div
-                 onMouseEnter={() => this.toggleChevrons(true)}
-                 onMouseLeave={() => this.toggleChevrons(false)}
-            >
-              <div>
-                <Img
-                  title={imageName}
-                  alt={imageName}
-                  sizes={imageSizes}
-                  className="border-radius"
-                />
-              </div>
-              <div className='chevron-container'>
-                <span style={{ display: showChevrons ? '' : 'none' }}
-                      className='fa icon fa-chevron-left chevron-left'
-                      onClick={() => this.changeImage(-1)}
-                />
-                <span style={{ display: showChevrons ? '' : 'none' }}
-                      className='fa icon fa-chevron-right chevron-right'
-                      onClick={() => this.changeImage(1)}
-                />
-              </div>
+          <div className="col-9 image-holder">
+            <div key={imageName}>
+              <div className='left' onClick={() => this.changeImage(-1)}/>
+              <Img
+                title={imageName}
+                alt={imageName}
+                sizes={imageSizes}
+                className="border-radius"
+              />
+              <div className='right' onClick={() => this.changeImage(1)}/>
             </div>
           </div>
         </div>

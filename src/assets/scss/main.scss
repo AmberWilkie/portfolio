@@ -39,22 +39,21 @@
   justify-content: space-between;
 }
 
-.chevron-left {
-  color: white;
-  opacity: .5;
-  font-size: 5rem;
-  position: absolute;
-  margin-top: -6rem;
-  margin-left: 1rem;
-}
+.image-holder {
+  position: relative;
+  display: inline-block;
 
-.chevron-right {
-  color: white;
-  opacity: .5;
-  font-size: 5rem;
-  position: absolute;
-  margin-top: -6rem;
-  margin-right: 1rem;
+  .left, .right {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+  }
+
+  .right {
+    right: 0;
+  }
 }
 
 .fade-exit-active {
