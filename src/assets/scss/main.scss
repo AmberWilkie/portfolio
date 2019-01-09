@@ -40,8 +40,11 @@
 }
 
 .image-holder {
+  @media(max-width: 768px) {
+    margin: 2rem 0 2rem 0;
+  }
+  
   position: relative;
-  display: inline-block;
 
   .left, .right {
     position: absolute;
@@ -1293,7 +1296,6 @@ button,
   #two {
     text-align: center;
   }
-
 }
 
 /* Small */

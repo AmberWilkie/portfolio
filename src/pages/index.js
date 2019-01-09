@@ -36,11 +36,11 @@ class IndexPage extends React.Component {
                 <header className="major">
                   <h2>About Me</h2>
                 </header>
-                <p>Hi, it's me. I live in Gothenburg, Sweden and work for a great little startup connecting schools and
-                  substitute teachers.</p>
+                <p>Hi, it's me. I live in Amsterdam and work remotely for a
+                  great little startup connecting schools and substitute teachers.</p>
                 <p>We work with React and Rails and get to do everything from brainstorm feature ideas to pick the
                   colors for buttons.</p>
-                <div className='about-me-links' >
+                <div className='about-me-links'>
                   <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
                   {this.ChevronLink('showPhotography', 'Photography')}
                   {this.ChevronLink('showMiscellaneous', 'Etc')}
@@ -51,7 +51,7 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          {showPhotography && <Photography />}
+          {showPhotography && <Photography/>}
           {showMiscellaneous && <Miscellaneous/>}
         </div>
       </Layout>
@@ -59,4 +59,4 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage;
+export default IndexPage
