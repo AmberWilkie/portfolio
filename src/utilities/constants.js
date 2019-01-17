@@ -127,30 +127,35 @@ export const miscellaneousTexts = {
     header: 'Miscellaneous',
     p1: 'All the other bits that don\'t fit so easily into one category or the other.',
   },
-  slides: {
-    header: 'Other stuff I\'m into',
-    p1: 'I really enjoy picking up random skills. I\'m talking about the rest of life (the not-tech of life). Here are a few arenas I\'ve tackled over the years:',
-    bullets: [
-      'Ceramics - wheel pottery. Three years and lots of pots',
-      'Novel writing. I completed two',
-      'Guitar. Various practice sessions and classes, not much to show for it, honestly.',
-      'Dance. I dig all types.',
-      'Cooking. Been eating my whole life.'
-    ]
-
-  },
   // slides: {
-  //   header: 'Slides from public speaking',
-  //   p1: 'Sometimes I get up the nerve to give a talk. Here are some links to slides from talks I\'ve given',
-  //   links: [{
-  //     href: 'https://docs.google.com/presentation/d/e/2PACX-1vTRv9hDF3LjRb1_ryzwKx4QeXlyDgNwdVPpxmrCZ6w976kRsVeDCvj-kTnnPXzT_Q0W0tZ2eUajEfAU/pub?start=false&loop=false&delayms=3000',
-  //     text: 'Rails and GraphQL, Got.rb meetup, September 2018',
-  //   },
-  //     {
-  //       href: 'https://docs.google.com/presentation/d/e/2PACX-1vTZf-tWeZpBVaCaHmS1m8GLt7tRje4FLy9C2LJCjv2-_QD47NgwQN-WGkN9wXiEDZpUhK1TMx_Hqgp1/pub?start=false&loop=false&delayms=3000',
-  //       text: 'Rails is Awesome, Sigma Smart Women, December 2016',
-  //     }],
+  //   header: 'Other stuff I\'m into',
+  //   p1: 'I really enjoy picking up random skills. I\'m talking about the rest of life (the not-tech of life). Here are a few arenas I\'ve tackled over the years:',
+  //   bullets: [
+  //     'Ceramics - wheel pottery. Three years and lots of pots',
+  //     'Novel writing. I completed two',
+  //     'Guitar. Various practice sessions and classes, not much to show for it, honestly.',
+  //     'Dance. I dig all types.',
+  //     'Cooking. Been eating my whole life.'
+  //   ]
+  //
   // },
+  slides: {
+    header: 'Slides from public speaking',
+    p1: 'Sometimes I get up the nerve to give a talk. Here are some links to slides from talks I\'ve given',
+    links: [
+      {
+      href: 'https://docs.google.com/presentation/d/1ay7GAD_tG9bMVCRh01TVKjMGw9ZjhgqPoUgGcCRnDCQ/edit?usp=sharing',
+      text: 'Pimp your React skills: Gatsby.js static site generator',
+    },
+      {
+      href: 'https://docs.google.com/presentation/d/e/2PACX-1vTRv9hDF3LjRb1_ryzwKx4QeXlyDgNwdVPpxmrCZ6w976kRsVeDCvj-kTnnPXzT_Q0W0tZ2eUajEfAU/pub?start=false&loop=false&delayms=3000',
+      text: 'Rails and GraphQL, Got.rb meetup, September 2018',
+    },
+      {
+        href: 'https://docs.google.com/presentation/d/e/2PACX-1vTZf-tWeZpBVaCaHmS1m8GLt7tRje4FLy9C2LJCjv2-_QD47NgwQN-WGkN9wXiEDZpUhK1TMx_Hqgp1/pub?start=false&loop=false&delayms=3000',
+        text: 'Rails is Awesome, Sigma Smart Women, December 2016',
+      }],
+  },
   yoga: {
     header: 'Yoga',
     p1: 'I have a yoga podcast because I love embarrassing myself. It\'s called "Just Some Yoga". Here\'s some links, but it\'s available wherever you look for it, probably.',
@@ -165,7 +170,7 @@ export const miscellaneousTexts = {
   },
   location: {
     header: 'Geolocating Me',
-    p1: 'Until late December, I\'ll be living in Gothenburg, Sweden. We\'ve been here three years and it has been pleasant enough. January 1 my plane touches down in Amsterdam and there we\'ll stay for at least two years.',
+    p1: 'I arrived in Amsterdam Jan. 1 from Gothenburg, Sweden. I lived the Swedish life for three years. Before that, I called Washington, DC home. I started this whole thing in California.',
   },
   cv: {
     header: 'CV',
