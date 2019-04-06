@@ -145,7 +145,7 @@ export const miscellaneousTexts = {
     links: [
       {
       href: 'https://docs.google.com/presentation/d/1ay7GAD_tG9bMVCRh01TVKjMGw9ZjhgqPoUgGcCRnDCQ/edit?usp=sharing',
-      text: 'Pimp your React skills: Gatsby.js static site generator',
+      text: 'Pimp your React skills: Gatsby.js static site generator, ReactJS Göteborg, December 2018',
     },
       {
       href: 'https://docs.google.com/presentation/d/e/2PACX-1vTRv9hDF3LjRb1_ryzwKx4QeXlyDgNwdVPpxmrCZ6w976kRsVeDCvj-kTnnPXzT_Q0W0tZ2eUajEfAU/pub?start=false&loop=false&delayms=3000',
