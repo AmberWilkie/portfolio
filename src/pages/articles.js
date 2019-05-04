@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 class Articles extends React.Component {
   render() {
@@ -10,7 +10,9 @@ class Articles extends React.Component {
         <div className="inner">
           {articles.map(article => (
             <div key={article.id}>
-              <h2>{article.frontmatter.title}</h2>
+              <Link to={article.fields.slug}>
+                <h2>{article.frontmatter.title}</h2>
+              </Link>
               <strong>{article.frontmatter.date}</strong>
               <p>{article.excerpt}</p>
             </div>
@@ -33,6 +35,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
         }
