@@ -8,10 +8,11 @@ class Articles extends React.Component {
     return (
       <section id="articles">
         <div className="inner">
-          {articles.map(article => (
+          {articles.filter(article => !article.frontmatter.draft).map(article => (
             <div key={article.id}>
               <Link to={article.fields.slug}>
                 <h2>{article.frontmatter.title}</h2>
+                <h3>{article.frontmatter.subtitle}</h3>
               </Link>
               <strong>{article.frontmatter.date}</strong>
               <p>{article.excerpt}</p>
@@ -33,7 +34,9 @@ export const query = graphql`
         node {
           id
           frontmatter {
+            draft
             title
+            subtitle
             date(formatString: "DD MMMM, YYYY")
           }
           fields {

@@ -12,6 +12,15 @@ This is when you say nice things to your partner. The kind of stuff they like he
 Doing stuff for your partner, out of love, not obligation.
 
 blah blah blah
+```html
+            <div key={article.id}>
+              <Link to={article.fields.slug}>
+                <h2>{article.frontmatter.title}</h2>
+              </Link>
+              <strong>{article.frontmatter.date}</strong>
+              <p>{article.excerpt}</p>
+            </div>
+```
 
 
 Here's a handy [quiz](https://www.5lovelanguages.com/profile/) you can take to find out what your preferred love languages are.
