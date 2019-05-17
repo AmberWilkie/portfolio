@@ -1,6 +1,7 @@
 ---
 title: "Book Recap: The Five Love Languages, by Gary Chapman"
 date: "2019-05-04"
+draft: true
 ---
 I read this book before I got serious about doing summaries. So here's a mega-quick recap:
 
@@ -21,6 +22,8 @@ blah blah blah
               <p>{article.excerpt}</p>
             </div>
 ```
+
+![alt text](../../assets/images/me.jpg)
 
 
 Here's a handy [quiz](https://www.5lovelanguages.com/profile/) you can take to find out what your preferred love languages are.

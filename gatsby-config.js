@@ -32,8 +32,20 @@ module.exports = {
         trackingId: "UA-2837192-9",
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 970,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-plugin-react-helmet',
-    `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     `gatsby-plugin-sass`,

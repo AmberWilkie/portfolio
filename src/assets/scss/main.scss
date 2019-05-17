@@ -110,6 +110,15 @@
     color: #333333 !important;
     font-weight: 600
   }
+
+  a {
+    border-bottom: none;
+    color: _palette(accent1);
+
+    &:hover {
+      color: #333333;
+    }
+  }
 }
 
 /* Basic */
@@ -973,13 +982,13 @@ button,
   background-color: $color-this-bg;
   color: _palette(dark, fg);
 
-  a {
-    border-bottom-color: transparentize(_palette(dark, fg), 0.25);
-
-    &:hover {
-      color: _palette(dark, fg-bold);
-    }
-  }
+  //a {
+  //  border-bottom-color: transparentize(_palette(dark, fg), 0.25);
+  //
+  //  &:hover {
+  //    color: _palette(dark, fg-bold);
+  //  }
+  //}
 
   h1, h2, h3, h4, h5, h6, strong, b {
     color: _palette(dark, fg-bold);
