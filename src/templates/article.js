@@ -8,6 +8,7 @@ console.log(post);
     <ArticleLayout>
       <h1 id='article-title'>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }}/>
+      <h2>Here we'll put the Twitter link and stuff.</h2>
     </ArticleLayout>
   )
 }

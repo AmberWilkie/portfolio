@@ -37,7 +37,7 @@ export const query = graphql`
             draft
             title
             subtitle
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY")
           }
           fields {
             slug
