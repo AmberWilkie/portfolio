@@ -1,14 +1,30 @@
 import React from 'react'
 import ArticleLayout from '../components/article-layout'
 import { graphql } from 'gatsby'
+import { FaEnvelope, FaTwitter, FaDev } from "react-icons/fa";
+import { ShareButtonRectangle, ShareBlockStandard } from "react-custom-share";
 
-export default ( { data: {markdownRemark: post} } ) => {
-console.log(post);
+export default ( props) => {
+  const { data: {markdownRemark: post}, location: { href: url } } = props;
+  const shareBlockProps = {
+    url,
+    button: ShareButtonRectangle,
+    buttons: [
+      { network: "Twitter", icon: FaTwitter },
+      { network: "Email", icon: FaEnvelope },
+      { network: "Dev", icon: FaDev },
+    ],
+    text: `"${post.frontmatter.title}" by @heyamberwilkie`,
+  };
+
   return (
     <ArticleLayout>
       <h1 id='article-title'>{post.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }}/>
-      <h2>Here we'll put the Twitter link and stuff.</h2>
+      <div className='twitter-post-link'>
+        <ShareBlockStandard {...shareBlockProps} />
+      </div>
+      <FaDev></FaDev>
     </ArticleLayout>
   )
 }

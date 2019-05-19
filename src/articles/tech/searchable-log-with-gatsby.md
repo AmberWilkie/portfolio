@@ -1,12 +1,9 @@
 ---
 title: "How to create a searchable log with Gatsby"
-subtitle: "For all your developer note-taking needs'
+subtitle: "For all your developer note-taking needs"
 draft: false
 date: "2019-05-16"
 ---
-
-![](https://cdn-images-1.medium.com/max/2600/1*jxvEoOYeWq64HVZAVNoI7g.jpeg)
-
 Taking notes is key to remembering most things in our lives. How many times have you worked on a project, then three months later needed to get back in the code, and it took you hours to come back up to speed? If you had taken a few minutes to jot down some documentation, you could have cut to the chase.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*IUCezy45wgJJY9YyGTghdg.png)

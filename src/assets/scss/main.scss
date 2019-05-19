@@ -97,6 +97,13 @@
   border-radius: 5px;
   box-shadow: 2px 2px #6766662e;
 
+  .twitter-post-link {
+    max-width: 20%;
+    @media(max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
   @media(max-width: 980px) {
     margin: 0 5rem 5rem 5rem;
     padding: 1rem;
@@ -118,6 +125,10 @@
     &:hover {
       color: #333333;
     }
+  }
+
+  img {
+    max-width: 100%
   }
 }
 

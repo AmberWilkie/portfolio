@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "emotion": "^10.0.9",
     "gatsby": "^2.0.19",
     "gatsby-image": "^2.0.15",
+    "gatsby-plugin-catch-links": "^2.0.14",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-manifest": "^2.0.5",
@@ -20,8 +22,10 @@
     "node-sass": "^4.10.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
+    "react-custom-share": "^0.4.8",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-icons": "^3.7.0",
     "react-transition-group": "^2.5.0"
   },
   "keywords": [
