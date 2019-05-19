@@ -88,6 +88,21 @@
   justify-content: space-evenly
 }
 
+.back-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-weight: 400;
+
+  a {
+    border-bottom: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
 .article-inner {
   background-color: white;
   color: #333333;
