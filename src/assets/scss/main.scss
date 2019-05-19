@@ -103,7 +103,7 @@
   }
 }
 
-.article-inner {
+#footer .article-inner {
   background-color: white;
   color: #333333;
   padding: 3rem;
@@ -111,6 +111,10 @@
   text-align: left;
   border-radius: 5px;
   box-shadow: 2px 2px #6766662e;
+
+  strong {
+    color: #333333
+  }
 
   .twitter-post-link {
     margin: 0 5rem;
