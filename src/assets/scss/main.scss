@@ -98,9 +98,9 @@
   box-shadow: 2px 2px #6766662e;
 
   .twitter-post-link {
-    max-width: 20%;
+    margin: 0 5rem;
     @media(max-width: 768px) {
-      max-width: 100%;
+      margin: 0
     }
   }
 

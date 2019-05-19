@@ -12,7 +12,7 @@ export default ( props) => {
     buttons: [
       { network: "Twitter", icon: FaTwitter },
       { network: "Email", icon: FaEnvelope },
-      { network: "Dev", icon: FaDev },
+      // { network: "DevCommunity", icon: FaDev },
     ],
     text: `"${post.frontmatter.title}" by @heyamberwilkie`,
   };
@@ -24,7 +24,6 @@ export default ( props) => {
       <div className='twitter-post-link'>
         <ShareBlockStandard {...shareBlockProps} />
       </div>
-      <FaDev></FaDev>
     </ArticleLayout>
   )
 }
