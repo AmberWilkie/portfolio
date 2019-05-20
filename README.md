@@ -7,6 +7,5 @@ www.amberwilkie.com
 
 ### To-do
 - Gracefully animate the opening of the photography section
-- Deploy https://medium.freecodecamp.org/how-i-made-my-portfolio-website-blazing-fast-with-gatsby-82ccddc2f671
-- Flesh out about me section
-- The image chevrons don't work in Firefox!
+- Import the rest of Medium posts using `medium-2-md convertUrl 'https://medium.freecodecamp.org/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e' -o 'src/articles/tech/' -f`
+- Put links to articles on main page

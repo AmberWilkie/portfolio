@@ -10,10 +10,12 @@ class Template extends React.Component {
       <div className='body'>
         <Header/>
         {this.props.children}
-        <Footer/>
+        <section id="footer">
+          <Footer/>
+        </section>
       </div>
     )
   }
 }
 
-export default Template;
+export default Template

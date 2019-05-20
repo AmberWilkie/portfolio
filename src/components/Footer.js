@@ -3,7 +3,6 @@ import React from 'react'
 class Footer extends React.Component {
   render() {
     return (
-      <section id="footer">
         <div className='container'>
           <header className='major footer'>
             <h2>Should we be talking?</h2>
@@ -24,7 +23,6 @@ class Footer extends React.Component {
             <li><a href='mailto:amber@amberwilkie.com' className='button special'>Drop me a line</a></li>
           </ul>
         </div>
-      </section>
     )
   }
 }
