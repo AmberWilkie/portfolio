@@ -1,8 +1,7 @@
 ---
-title: "Everything I learned from \#Javascript30"
-subtitle: "Tech Jargon Series"
+title: "Everything I learned from #Javascript30"
 draft: false
-date: "2019-04-19"
+date: "2017-03-01"
 ---
 First, some exclamations: this was a great series! I highly recommend it! Best
 tutorial series I’ve seen — really!
@@ -37,7 +36,7 @@ I know!
 
 I’m a note-taker — it’s how I manage my work and personal lives and everything
 in-between. I’m a keeper of notebooks. So believe me that I have a ton of
-\#Javscript30 notes scrawled all over some texts. But I wanted to keep track of
+&#35;Javscript30 notes scrawled all over some texts. But I wanted to keep track of
 the most important stuff, so after every lesson, I would write a README file
 with the most important lessons and code from each day. I’ll draw on these notes
 in this blog post as review and also to help solidify the knowledge I picked up
