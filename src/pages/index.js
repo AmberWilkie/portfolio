@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Photography from '../components/Photography'
 import Miscellaneous from '../components/Miscellaneous'
+import ArticlesSection from '../components/ArticlesSection';
 import me from '../assets/images/main/me.png'
 
 class IndexPage extends React.Component {
@@ -12,6 +13,7 @@ class IndexPage extends React.Component {
     <span
       className={`link ${this.state[toggle] ? 'chevron-below' : ''}`}
       onClick={() => this.setState({
+        showArticles: false,
         showPhotography: false,
         showMiscellaneous: false,
         [toggle]: !this.state[toggle],
@@ -20,7 +22,7 @@ class IndexPage extends React.Component {
   </span>
 
   render() {
-    const { showMiscellaneous, showPhotography } = this.state
+    const { showArticles, showMiscellaneous, showPhotography } = this.state
 
     return (
       <Layout>
@@ -45,7 +47,7 @@ class IndexPage extends React.Component {
                   writing Ruby and Javascript code every day. For the rest of what I do, hit the links below.
                 </p>
                 <div className='about-me-links'>
-                  <a href='http://www.medium.com/@heyamberwilkie' target='_new'>Tech Blog</a>
+                  {this.ChevronLink('showArticles', 'Tech Blog')}
                   {this.ChevronLink('showPhotography', 'Photography')}
                   {this.ChevronLink('showMiscellaneous', 'Etc')}
                 </div>
@@ -55,6 +57,7 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </section>
+          {showArticles && <ArticlesSection />}
           {showPhotography && <Photography/>}
           {showMiscellaneous && <Miscellaneous/>}
         </div>
