@@ -7,7 +7,7 @@ class ArticleTemplate extends React.Component {
   render() {
     return (
       <div id='footer'>
-        <div className='back-link'><Link to='/'>{'<< Home'}</Link></div>
+        <div className='back-link'><Link to='/articles'>{'<< Articles'}</Link></div>
         <div className='article-body'>
           <div className='article-inner'>
             {this.props.children}

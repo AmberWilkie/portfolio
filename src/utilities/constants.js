@@ -170,7 +170,7 @@ export const miscellaneousTexts = {
   },
   location: {
     header: 'Geolocating Me',
-    p1: 'I arrived in Amsterdam Jan. 1 from Gothenburg, Sweden. I lived the Swedish life for three years. Before that, I called Washington, DC home. I started this whole thing in California.',
+    p1: 'I\'ll touch down in Philadelphia June 25 after six months in Amsterdam. Before that, I lived the Swedish life in Gothenburg for three years. And going way back, I called Washington, DC home. I started this whole thing in California.',
   },
   cv: {
     header: 'CV',

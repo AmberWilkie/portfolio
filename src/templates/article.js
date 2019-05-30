@@ -1,7 +1,7 @@
 import React from 'react'
 import ArticleLayout from '../components/article-layout'
 import { graphql } from 'gatsby'
-import { FaEnvelope, FaTwitter, FaDev } from "react-icons/fa";
+import { FaEnvelope, FaTwitter } from "react-icons/fa";
 import { ShareButtonRectangle, ShareBlockStandard } from "react-custom-share";
 
 export default ( props) => {
