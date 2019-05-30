@@ -7,7 +7,8 @@ class ArticlesSection extends Component {
     console.log(this.props)
     const { standalonePage } = this.props
     const { edges } = this.props.data.allMarkdownRemark
-    const articles = edges.map(edge => edge.node)
+    const allArticles = edges.map(edge => edge.node).filter(article => !article.frontmatter.draft)
+    const articles = standalonePage ? allArticles : allArticles.slice(0, 5)
 
     return (
       <div id="photography" className="main style2">
@@ -23,7 +24,7 @@ class ArticlesSection extends Component {
             </header>
           </div>
           <div className="inner col-9">
-            {articles.filter(article => !article.frontmatter.draft).map(article => (
+            {articles.map(article => (
               <div key={article.id}>
                 <Link to={article.fields.slug}>
                   <h4 className='article-title'>
@@ -54,7 +55,7 @@ ArticlesSection.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 10) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id

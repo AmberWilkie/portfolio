@@ -111,4 +111,5 @@ There are so many phrases that get thrown around at tech meetups and conferences
 
 The truth is, I often just don't know the right word for it. As humans, but especially developer humans, we love to dismiss those who don't "talk the talk", so this series is about getting a solid understanding of programming concepts that one "should know".
 
-This is the second article in the series. The first was [higher-order functions](/tech/higher-order-functions-and-react-example). Look out for more as I go to meetups and conferences and pretend to know what my fellow techies are talking about, but then have to go home and Google it.
+This is the third article in the series. The first was a [mash-up of concepts in Ruby](/tech/first-tech-jargon), the second
+[higher-order functions](/tech/higher-order-functions-and-react-example). Look out for more as I go to meetups and conferences and pretend to know what my fellow techies are talking about, but then have to go home and Google it.
