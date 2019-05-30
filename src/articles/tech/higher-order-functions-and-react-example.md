@@ -1,5 +1,5 @@
 ---
-title: "Higher-order functions: what they are, and a React\_example"
+title: "Higher-order functions: what they are, and a React example"
 subtitle: "Tech Jargon Series"
 draft: false
 date: "2019-04-02"
