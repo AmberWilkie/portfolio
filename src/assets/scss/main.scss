@@ -57,6 +57,10 @@
   .right {
     right: 0;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .fade-exit-active {
