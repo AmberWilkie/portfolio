@@ -1,6 +1,6 @@
 ---
 title: "Memory leaks: what they are and how to avoid them"
-draft: false
+draft: true
 date: "2019-06-05"
 ---
 
