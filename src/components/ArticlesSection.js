@@ -24,7 +24,7 @@ class ArticlesSection extends Component {
             </header>
           </div>
           <div className="inner col-9">
-            {articles.map(article => (
+            {articles.filter(article => !article.frontmatter.draft).map(article => (
               <div key={article.id}>
                 <Link to={article.fields.slug}>
                   <h4 className='article-title'>
@@ -55,7 +55,7 @@ ArticlesSection.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 10) {
       edges {
         node {
           id

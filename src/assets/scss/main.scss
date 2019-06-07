@@ -121,7 +121,7 @@
   }
 
   .twitter-post-link {
-    margin: 0 5rem;
+    margin: 2rem 5rem;
     @media(max-width: 768px) {
       margin: 0
     }
@@ -138,7 +138,12 @@
 
   h1, h2, h3, h4, h5 {
     color: #333333 !important;
-    font-weight: 600
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  h1#article-title {
+    font-size: 3rem;
   }
 
   a {
@@ -150,8 +155,31 @@
     }
   }
 
+  p {
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    margin: 0 0 1rem 1rem;
+  }
+
   img {
     max-width: 100%
+  }
+
+  svg {
+    transform: unset;
+
+    &:hover {
+      filter: brightness(105%);
+    }
+  }
+
+  button.rcs-button {
+    &:hover {
+      background-color: gray;
+      opacity: .5;
+    }
   }
 }
 
