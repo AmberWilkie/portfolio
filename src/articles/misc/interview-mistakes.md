@@ -94,6 +94,11 @@ what you make now**, unless it is well above average for your area. Moving roles
 keep track of questions they want to ask, and even appear to be someone who cares about the answer, without writing things
  down? Only one of the half-dozen people we spoke to for this role even *brought* a notepad. I know not everyone is a
   note-taker, but I also know that the best developers *are*.
+- **Major gaps in career history**. There is 100% nothing wrong with raising a child, pursuing a degree, taking a year to 
+travel, or going through a period of illness that prevents you from working. The problem is when I look at your CV
+and the last time you seem to have been employed was in 2017 and you leave nothing by way of explanation. This leads
+me to believe that either a) you were too lazy to update your CV or b) you haven't been able to find work in that time.
+I don't know why these people have left off an explanation, but I think having one would be *much better* than a big old ?.
 
 # Resumes / CVs
 I saw lots of CVs during this process - many more than candidates we eventually interviewed. Here are some major problems
