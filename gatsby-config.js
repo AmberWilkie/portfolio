@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://wilkie.tech`,
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -51,6 +54,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-favicon`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-feed`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
