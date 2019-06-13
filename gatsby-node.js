@@ -23,7 +23,7 @@ exports.createPages = ( { graphql, actions } ) => {
   const { createPage } = actions
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { frontmatter: { draft: { eq: false } } }) {
         edges {
           node {
             fields {
@@ -38,7 +38,6 @@ exports.createPages = ( { graphql, actions } ) => {
     }
   `).then(result => {
     result.data.allMarkdownRemark.edges.forEach(( { node } ) => {
-      if (node.frontmatter.draft) return;
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/article.js`),
