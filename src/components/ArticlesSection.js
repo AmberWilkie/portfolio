@@ -55,9 +55,7 @@ ArticlesSection.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC,
-      filter: { frontmatter: { draft: { eq: false } } } 
-    }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id
