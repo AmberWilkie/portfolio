@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://wilkie.tech`,
+    title: 'Amber Wilkie, kick-ass software engineer',
+    description: 'Portfolio for Amber Wilkie, who specializes in rapid development for the web with Ruby and Javascript technologies'
   },
   plugins: [
     {
