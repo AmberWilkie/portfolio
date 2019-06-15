@@ -17,19 +17,20 @@ const HeaderImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "main/desert.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "main/desert-min.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid
+            sizes(maxWidth: 1500) {
+                ...GatsbyImageSharpSizes
             }
           }
         }
       }
     `}
     render={data => {
-      console.log(data);
-      return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      return <Img
+        sizes={data.placeholderImage.childImageSharp.sizes}
+      />
     }}
   />
 )
-export default HeaderImage;
+export default HeaderImage

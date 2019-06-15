@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Photography from '../components/Photography'
 import Miscellaneous from '../components/Miscellaneous'
 import ArticlesSection from '../components/ArticlesSection';
-import me from '../assets/images/main/me.png'
+import me from '../assets/images/main/me-min.png'
 
 class IndexPage extends React.Component {
   state = {}
@@ -38,13 +38,12 @@ class IndexPage extends React.Component {
                 <header className="major">
                   <h2>About Me</h2>
                 </header>
-                <p>Hi, it's me. I live in Amsterdam and work for a
-                  great little startup called <a href='https://www.plugify.nl'>Plugify</a>.
-                We bring more music to the world by making it super-easy to find and book live acts.
+                <p>Hi, it's me. I'm looking for a dev job in Philly! I'm great at: software development
+                  with Ruby and Javascript, thinking big-picture, and communicating business needs and technical processes.
                 </p>
                 <p>
                   I've always worn many hats at work, and thrive on a good dabble in the random. You'll find me
-                  writing Ruby and Javascript code every day. For the rest of what I do, hit the links below.
+                  writing code every day. For the rest of what I do, hit the links below.
                 </p>
                 <div className='about-me-links'>
                   {this.ChevronLink('showArticles', 'Tech Blog')}
