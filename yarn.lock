@@ -5375,9 +5375,9 @@ gatsby-react-router-scroll@^2.0.7:
     warning "^3.0.0"
 
 gatsby-remark-images@^3.0.11:
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.0.14.tgz#b42a258bf55d70ace8f425a51cef9ad38103ac98"
-  integrity sha512-q4pMroxcRouu+qkuyfKi0SY3I/nnLJB1dZKwrsDWOlXEsNfCiS2Kyxf/RZSitVus4f+rBgVRL4t0xPD0S8275w==
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.1.2.tgz#01f707ffa27bd2181c78da1aca51f0e32698c930"
+  integrity sha512-RZUtqT7cqfFfQ3UFoL0ahy5duQo3/BSJdodyw3gp+PhWlWB3hz9fEZ5mvuCXJql+n/kLv+ifZAL5udPl1TNEqA==
   dependencies:
     "@babel/runtime" "^7.0.0"
     cheerio "^1.0.0-rc.2"
