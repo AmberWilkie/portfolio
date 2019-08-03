@@ -7,7 +7,7 @@ date: "2019-08-03"
 I started a new job on Monday (it's going awesome, thanks for asking) and that means a brand new, blank-slate Macbook Pro. Fortunately, I still have my old work computer (my last job maybe wasn't so wonderful, as I had to bring my own every day...). But next time, I'll probably have to turn my new work computer in, so I wanted to create a record of my setup.  Maybe it's helpful for others too!  By the way, almost all of these programs are F-R-E-E.
 
 # The Terminal
-It's absolutely essential to get your terminal set up so you can work efficiently. If you are running the default terminal with no adjustments this could save you a *lot* of time and frustration.
+It's absolutely essential to get your terminal set up so you can work efficiently. If you are running the default terminal with no adjustments, these tips could save you a *lot* of time and frustration.
 
 ## iTerm2
 Go on and download [iTerm2](https://iterm2.com/) and then be very pleased with all the features. My favorites are:
@@ -16,6 +16,7 @@ Go on and download [iTerm2](https://iterm2.com/) and then be very pleased with a
 
 ## oh my zsh
 If you, like me, want to make your terminal work for you, get [oh my zsh](https://github.com/robbyrussell/oh-my-zsh). Here's what my terminal prompt looks like:
+
 ![oh-my-zsh config demo](../../assets/images/article-images/iterm-demo.png)
 
 When I have uncommitted changes, I get a yellow x to the left of my cursor. It's really handy for recognizing that I have changes hanging out.
@@ -63,7 +64,7 @@ Pro tip: Always run `rm -rf node_modules` instead of `trash node_modules` (you 1
 
 ## Homebrew & Cask
 If you have a mac, you already know you need [Homebrew](/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-) and [Cask].(https://github.com/Homebrew/homebrew-cask) The first to install packages, the next for applications distributed in binary.
+) and [Cask](https://github.com/Homebrew/homebrew-cask). The first to install packages, the next for applications distributed in binary.
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install cask
@@ -74,7 +75,9 @@ My editor of choice is Webstorm, though I'm trying to create a workflow with VS 
 
 ## TimeOut
 [TimeOut](https://www.dejal.com/timeout/) blocks your screen at intervals, forcing you to take a break. I keep mine at 2 minutes every hour and 15 seconds every 15 minutes. It can get annoying, but it's good for my health. We know sitting for extended periods of time is bad for us, but it's far too easy to let four hours go while we just fix this liiiiittttlllllle thing. Conveniently, my break popped up while I was writing this paragraph. (Normally the image and timer are aligned, not sure what is up with that.)
+
 ![timeout break generator demo](../../assets/images/article-images/timeout.png)
+
 You can set the image to be whatever you want and can add text.
 
 ## gitx
@@ -83,7 +86,9 @@ GitX is extremely useful for quickly reviewing changes in your current commit an
 
 ## Alfred
 I always install Alfred, though I honestly have not yet taken the time to fall in love. I am aware that there are a thousand features that developers use every day. It's on my productivity improvements list to figure out! I'm likely to buy the power pack so that I can access the improved clipboard, which looks awesome.
+
 ![Alfred clipboard](https://www.alfredapp.com/help/features/clipboard/clipboard-viewer.png) 
+
 I was using [Clipy](https://github.com/Clipy/Clipy) before, but the visual preview of what you are going to paste seems incredibly helpful.
 
 But whatever you do, get a damn clipboard extension! Having only one clipboard slot is impossible. How many times have you had to go back and forth between things copying and pasting? Having a better clipboard manager significantly improved my efficiency as a developer.
