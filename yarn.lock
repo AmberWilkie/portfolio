@@ -5392,14 +5392,14 @@ gatsby-react-router-scroll@^2.0.7:
     warning "^3.0.0"
 
 gatsby-remark-images@^3.0.11:
-  version "3.0.14"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.0.14.tgz#b42a258bf55d70ace8f425a51cef9ad38103ac98"
-  integrity sha512-q4pMroxcRouu+qkuyfKi0SY3I/nnLJB1dZKwrsDWOlXEsNfCiS2Kyxf/RZSitVus4f+rBgVRL4t0xPD0S8275w==
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.1.7.tgz#baa168afe680f4b6f209ee1d04aa801de38aaa23"
+  integrity sha512-lTfHUUwCLEMpM4OlaLzjipcuuOIgj1PoxXhFwETgR3qaeLRovMtvCF26NqYShBkGn8R42WnegJw5Wh4yTQJDow==
   dependencies:
     "@babel/runtime" "^7.0.0"
     cheerio "^1.0.0-rc.2"
     is-relative-url "^2.0.0"
-    lodash "^4.17.10"
+    lodash "^4.17.14"
     mdast-util-definitions "^1.2.0"
     potrace "^2.1.1"
     query-string "^6.1.0"
