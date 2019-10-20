@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
                 <header className="major">
                   <h2>About Me</h2>
                 </header>
-                <p>Hi, it's me. I'm looking for a dev job in Philly! I'm great at: software development
+                <p>Hi, it's me. I live and work in Philly. I'm great at: software development
                   with Ruby and Javascript, thinking big-picture, and communicating business needs and technical processes.
                 </p>
                 <p>
