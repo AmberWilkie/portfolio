@@ -6,7 +6,7 @@
   "dependencies": {
     "emotion": "^10.0.9",
     "gatsby": "^2.13.50",
-    "gatsby-image": "^2.0.15",
+    "gatsby-image": "^2.2.31",
     "gatsby-plugin-catch-links": "^2.0.14",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-feed": "^2.2.3",
