@@ -19,7 +19,7 @@ export default ( props) => {
 
   return (
     <ArticleLayout>
-      <h1 id='article-title'>{post.frontmatter.title}</h1>
+      <h1 id='article-title'>{post.frontmatter.title}<span class='article-date'>{post.frontmatter.date}</span></h1>
       <div dangerouslySetInnerHTML={{ __html: post.html }}/>
       <div className='twitter-post-link'>
         <ShareBlockStandard {...shareBlockProps} />
@@ -34,6 +34,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }
