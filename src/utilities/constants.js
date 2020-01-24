@@ -144,6 +144,10 @@ export const miscellaneousTexts = {
     p1: 'Sometimes I get up the nerve to give a talk. Here are some links to slides from talks I\'ve given',
     links: [
       {
+        href: 'https://docs.google.com/presentation/d/1OTNrxol_g2Y6jKsm3hVKEDHkTL4yaVZFJgTPWltuRD4/edit?usp=sharing',
+        text: 'How does the internet work?, Philly.rb, January 2019'
+      },
+      {
       href: 'https://docs.google.com/presentation/d/1ay7GAD_tG9bMVCRh01TVKjMGw9ZjhgqPoUgGcCRnDCQ/edit?usp=sharing',
       text: 'Pimp your React skills: Gatsby.js static site generator, ReactJS Göteborg, December 2018',
     },
