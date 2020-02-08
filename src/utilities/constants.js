@@ -145,7 +145,7 @@ export const miscellaneousTexts = {
     links: [
       {
         href: 'https://docs.google.com/presentation/d/1OTNrxol_g2Y6jKsm3hVKEDHkTL4yaVZFJgTPWltuRD4/edit?usp=sharing',
-        text: 'How does the internet work?, Philly.rb, January 2019'
+        text: 'How does the internet work?, Philly.rb, January 2020'
       },
       {
       href: 'https://docs.google.com/presentation/d/1ay7GAD_tG9bMVCRh01TVKjMGw9ZjhgqPoUgGcCRnDCQ/edit?usp=sharing',
