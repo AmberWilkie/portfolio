@@ -21,7 +21,7 @@
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.3.3",
     "joi": "^14.3.1",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.14.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-custom-share": "^0.4.8",
