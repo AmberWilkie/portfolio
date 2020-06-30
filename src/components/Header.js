@@ -1,9 +1,11 @@
 import React from 'react'
+import HeaderImage from './HeaderImage'
 
 class Header extends React.Component {
   render() {
     return (
       <section id="header">
+        <HeaderImage />
         <div className="inner">
           <h1 className='header'>YO, I'M AMBER.</h1>
           <div style={{ display: 'flex' }}>
