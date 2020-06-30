@@ -29,10 +29,11 @@ const HeaderImage = () => (
     render={data => {
       return <Img
       style={{
-        maxHeight: '0px'
+        maxHeight: '0px',
+        position: 'unset'
       }}
       imgStyle={{
-        objectPosition: '0% 25% 0% 0%',
+        objectPosition: '25% 25%',
       }}
         sizes={data.placeholderImage.childImageSharp.sizes}
       />
