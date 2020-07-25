@@ -1153,7 +1153,7 @@ button,
   @include padding(9em, 0, (0, 0, _size(element-margin), 0));
   @include dark(#4686a0);
   background-attachment: fixed;
-  background-image: url('../images/main/desert.jpg');
+  // background-image: url('../images/main/desert.jpg');
   background-position: center;
   background-size: cover;
   overflow: hidden;
