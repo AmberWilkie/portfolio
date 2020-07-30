@@ -27,7 +27,7 @@
     "react-custom-share": "^0.4.8",
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.0",
-    "react-icons": "^3.9.0",
+    "react-icons": "^3.10.0",
     "react-transition-group": "^4.3.0"
   },
   "keywords": [
