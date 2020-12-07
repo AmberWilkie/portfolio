@@ -144,6 +144,10 @@ export const miscellaneousTexts = {
     p1: 'Sometimes I get up the nerve to give a talk. Here are some links to slides from talks I\'ve given',
     links: [
       {
+        href: 'https://drive.google.com/file/d/1n5fG5iROvBTfcGFLUgCj7hzl94EsEIV6/view',
+        text: 'Privacy-conscious home automation, BarCamp Philly, December 2020'
+      },
+      {
         href: 'https://docs.google.com/presentation/d/1OTNrxol_g2Y6jKsm3hVKEDHkTL4yaVZFJgTPWltuRD4/edit?usp=sharing',
         text: 'How does the internet work?, Philly.rb, January 2020'
       },
