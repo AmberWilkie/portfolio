@@ -53,7 +53,7 @@ For many years, I did a recap with photos and all sorts of nostalgia. This year,
 - _Grown Ups: A Novel_, Emma Jane Unsworth
     Incredibly unlikably characters, but somehow a compelling narrative.
 
-And I read a couple cookbooks and tech books that don't show up in Goodreads:
+I'm currently reading _The Outlaw Ocean: Journeys Across the Last Untamed Frontier_ by Ian Urbina. And I read a couple cookbooks and tech books that don't show up in Goodreads:
 - _Javascript: The Good Parts_, Douglas Crockford
 - _Zahav: A World of Israeli Cooking_, Michael Solomonov
 - _Plenty_, Yotam Ottolenghi
