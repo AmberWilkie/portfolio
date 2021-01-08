@@ -1,6 +1,6 @@
 ---
 title: "My 2020 in Books"
-draft: false
+draft: true
 date: "2020-12-31"
 ---
 For many years, I did a recap with photos and all sorts of nostalgia. This year, obviously, there's a lot less to say. But it's always fun to revisit my reads from the previous year. In chronological ascending order of what I read, my 2020 in books:
