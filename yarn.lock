@@ -7185,14 +7185,14 @@ gatsby-graphiql-explorer@^0.8.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-image@^2.0.15:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.2.7.tgz#358e85589e4feb125983814f51e228509fcc2a28"
-  integrity sha512-W67bYjOXZlw8IvGd99ZmkeU6GPfif2SifLsqevIOUkT7ESiY6ZjOUaSXggyyKTzvMZG5QCBUl88JIg5rBjHCwA==
+gatsby-image@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.5.0.tgz#fe76d1d5638bdbe1255c2226a1b00539887af798"
+  integrity sha512-pr3P8+UiyL3nThVlqjlGbrDzaLx/aERjHoD4iVxrEsdoMmmb8fh+MT8/OkYe48NVJUiifNY1EmVUHP9RRCB6nw==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.12.5"
     object-fit-images "^3.2.4"
-    prop-types "^15.6.1"
+    prop-types "^15.7.2"
 
 gatsby-legacy-polyfills@^0.4.0:
   version "0.4.0"
