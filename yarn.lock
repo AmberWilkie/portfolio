@@ -932,10 +932,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  version "7.12.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
-  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.2", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+  version "7.14.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.8.tgz#7119a56f421018852694290b9f9148097391b446"
+  integrity sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -7185,14 +7185,14 @@ gatsby-graphiql-explorer@^0.8.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-image@^2.0.15:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.2.7.tgz#358e85589e4feb125983814f51e228509fcc2a28"
-  integrity sha512-W67bYjOXZlw8IvGd99ZmkeU6GPfif2SifLsqevIOUkT7ESiY6ZjOUaSXggyyKTzvMZG5QCBUl88JIg5rBjHCwA==
+gatsby-image@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.10.0.tgz#f4013561736c0baef8c0ba2c72b760de78bc1b28"
+  integrity sha512-bbBqR2sY5wWt0qPAyV0Q2RJwy9Gd9Z+cs/go3XZDl/8XktyWSL2znoUPZfBJ1jnJ6VvbyqhDvmr7vM3zM70Xfw==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.14.6"
     object-fit-images "^3.2.4"
-    prop-types "^15.6.1"
+    prop-types "^15.7.2"
 
 gatsby-legacy-polyfills@^0.4.0:
   version "0.4.0"
