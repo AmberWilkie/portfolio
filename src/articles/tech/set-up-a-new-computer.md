@@ -14,6 +14,9 @@ Go on and download [iTerm2](https://iterm2.com/) and then be very pleased with a
 - Scroll (arrow keys) up and down to move through commands. Type partial commands to filter, then scroll.
 - Auto-copy - just highlight text in iTerm and it will automatically be copied to the clipboard.
 
+
+Also be sure to set up your keybindings so you can jump between and delete words. Use [this guide](https://github.com/AmberWilkie/portfolio).
+
 ## oh my zsh
 If you, like me, want to make your terminal work for you, get [oh my zsh](https://github.com/robbyrussell/oh-my-zsh). Here's what my terminal prompt looks like:
 
