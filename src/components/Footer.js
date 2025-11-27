@@ -18,6 +18,8 @@ class Footer extends React.Component {
               className="label">GitHub</span></a></li>
             <li><a href="https://www.linkedin.com/in/amber-wilkie/" className="icon alt fa-linkedin-square"><span
               className="label">GitHub</span></a></li>
+            <li><a href="https://medium.com/@heyamberwilkie" className="icon alt fa-brands fa-medium"><span
+              className="label">Medium</span></a></li>
           </ul>
           <ul className='actions uniform'>
             <li><a href='mailto:amber@amberwilkie.com' className='button special'>Drop me a line</a></li>
