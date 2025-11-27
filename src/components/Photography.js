@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
 import { CSSTransition } from 'react-transition-group'
 
@@ -31,7 +31,7 @@ class Photography extends Component {
 
   render() {
     const { currentImage } = this.state
-    const imageSizes = currentImage.childImageSharp.sizes
+    const imageData = getImage(currentImage.childImageSharp)
     const imageName = currentImage.name
 
     return (
@@ -57,10 +57,10 @@ class Photography extends Component {
           <div className="col-9 image-holder">
             <div key={imageName}>
               <div className='left' onClick={() => this.changeImage(-1)}/>
-              <Img
+              <GatsbyImage
+                image={imageData}
                 title={imageName}
                 alt={imageName}
-                sizes={imageSizes}
                 className="border-radius"
               />
               <div className='right' onClick={() => this.changeImage(1)}/>
@@ -78,19 +78,17 @@ Photography.propTypes = {
 
 const query = graphql`
     query imagesQuery {
-        Images: allFile(
-            sort: {order: ASC, fields: [absolutePath]}
-            filter: {relativePath: {regex: "/travel/"}}
-        ) {
+      Images: allFile(
+        sort: { absolutePath: ASC }
+        filter: {relativePath: {regex: "/travel/"}}
+      ) {
             edges {
                 node {
                     relativePath
                     name
-                    childImageSharp {
-                        sizes(maxWidth: 1500) {
-                            ...GatsbyImageSharpSizes
-                        }
-                    }
+                            childImageSharp {
+                              gatsbyImageData(width: 1500, placeholder: BLURRED, formats: [AUTO, WEBP])
+                            }
                 }
             }
         }
